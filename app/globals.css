@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #071322;
+  --color-navy-900: #0A1A2F;
+  --color-navy-800: #13294B;
+  --color-navy-700: #1D3A66;
+  --color-gold: #E8B931;
+  --color-gold-dark: #C99A14;
+  --color-cream: #F7F5EF;
+  --color-whatsapp: #25D366;
+  --font-display: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-manrope), system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-cream);
+  color: var(--color-navy-900);
+}
+
+h1, h2, h3, .font-display { font-family: var(--font-display); }
+
+@utility btn-gold {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  border-radius: 9999px; padding: .75rem 1.5rem; font-weight: 700; font-size: .9rem;
+  background: var(--color-gold); color: var(--color-navy-900); transition: background .2s;
+  &:hover { background: var(--color-gold-dark); }
+}
+
+@utility btn-outline {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  border-radius: 9999px; padding: .75rem 1.5rem; font-weight: 700; font-size: .9rem;
+  border: 1.5px solid currentColor; transition: background .2s, color .2s;
+  &:hover { background: var(--color-gold); color: var(--color-navy-900); border-color: var(--color-gold); }
+}
+
+@utility input {
+  width: 100%; border-radius: .6rem; border: 1px solid #d6d9e0; background: white;
+  padding: .7rem .9rem; font-size: .95rem; outline: none;
+  &:focus { border-color: var(--color-gold); box-shadow: 0 0 0 3px rgb(232 185 49 / .25); }
+}
+
+@utility eyebrow {
+  text-transform: uppercase; letter-spacing: .2em; font-size: .75rem; font-weight: 700; color: var(--color-gold);
+}

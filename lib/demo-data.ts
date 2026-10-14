@@ -1,0 +1,15 @@
+import type { Vehicle } from "./types";
+
+// Used automatically when Supabase keys are not set, so the demo runs instantly.
+const base = { insurance: "Comprehensive", coverage_area: "Lagos & Nationwide", published: true, description: null };
+
+export const demoVehicles: Vehicle[] = [
+  { ...base, id: "1", slug: "mercedes-s-class", name: "Mercedes-Benz S-Class", category: "Luxury/Executive", tag: "Ultra Luxury", capacity: 4, luggage: 3, drive_type: "Chauffeur-driven", features: ["Climate control", "VIP glove service", "Weddings & events", "Leather interior"], daily_rate: 250000, weekly_rate: 1500000, image_url: "/images/hero.jpg", featured: true, description: "Our flagship executive saloon for VIP movement, weddings and corporate guests." },
+  { ...base, id: "2", slug: "cadillac-escalade", name: "Cadillac Escalade", category: "SUVs", tag: "Executive", capacity: 7, luggage: 5, drive_type: "Chauffeur-driven", features: ["Climate control", "Spacious cabin", "VIP glove service", "Airport pickups"], daily_rate: 300000, weekly_rate: 1800000, image_url: "/images/suv.jpg", featured: true },
+  { ...base, id: "3", slug: "armoured-lexus-lx570", name: "Armoured Lexus LX 570", category: "SUVs", tag: "Armoured", capacity: 5, luggage: 4, drive_type: "Chauffeur-driven", features: ["B6 armour", "High security", "Escort available", "Climate control"], daily_rate: 450000, weekly_rate: 2800000, image_url: "/images/suv.jpg", featured: true },
+  { ...base, id: "4", slug: "toyota-camry", name: "Toyota Camry", category: "Sedans", tag: "Business", capacity: 4, luggage: 2, drive_type: "Self-drive or chauffeur", features: ["Climate control", "Fuel efficient", "Bluetooth audio"], daily_rate: 70000, weekly_rate: 420000, image_url: "/images/sedan.jpg", featured: false },
+  { ...base, id: "5", slug: "lexus-es350", name: "Lexus ES 350", category: "Sedans", tag: "Executive", capacity: 4, luggage: 2, drive_type: "Self-drive or chauffeur", features: ["Climate control", "Leather seats", "Corporate trips"], daily_rate: 110000, weekly_rate: 650000, image_url: "/images/sedan.jpg", featured: false },
+  { ...base, id: "6", slug: "toyota-hiace", name: "Toyota Hiace Executive", category: "Buses & Vans", tag: "Group Travel", capacity: 14, luggage: 10, drive_type: "Chauffeur-driven", features: ["Climate control", "Events & tours", "Staff transport"], daily_rate: 150000, weekly_rate: 900000, image_url: "/images/bus.jpg", featured: true },
+  { ...base, id: "7", slug: "toyota-coaster", name: "Toyota Coaster Bus", category: "Buses & Vans", tag: "Group Travel", capacity: 30, luggage: 20, drive_type: "Chauffeur-driven", features: ["Climate control", "Weddings & events", "Long distance"], daily_rate: 220000, weekly_rate: 1300000, image_url: "/images/bus.jpg", featured: false },
+  { ...base, id: "8", slug: "range-rover-vogue", name: "Range Rover Vogue", category: "Luxury/Executive", tag: "Ultra Luxury", capacity: 4, luggage: 3, drive_type: "Chauffeur-driven", features: ["Climate control", "VIP glove service", "Panoramic roof"], daily_rate: 350000, weekly_rate: 2100000, image_url: "/images/suv.jpg", featured: false },
+];
