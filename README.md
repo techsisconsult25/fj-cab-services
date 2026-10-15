@@ -1,6 +1,6 @@
 # FJ Cab Services: Car Rental Website
 
-Next.js 15 + Supabase + Tailwind CSS v4. Built by TechSis Consult.
+Next.js 16 + Supabase + Tailwind CSS v4. Built by TechSis Consult.
 
 ## 1. Run it locally (works instantly with demo cars)
 
